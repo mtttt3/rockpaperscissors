@@ -1,9 +1,12 @@
 public class Main{
     public static void main(String[] args)
     {
-        RockPaperScissorsGame game = new RockPaperScissorsGame();
+        /* 
+       RockPaperScissorsGame game = new RockPaperScissorsGame();
 
-        game.run();
+       game.run();
+       */
+ 
     }
 }
 

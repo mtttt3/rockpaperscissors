@@ -44,6 +44,7 @@ public class RockPaperScissorsGame
                 if (user_int == 0)
                 {
                     System.out.println("you chose rock" + AttackType.ROCK);
+                    wait(750);
                     System.out.println(intToAttackType(botMove()));
                     matchResult(user_int);
                     g = false;
@@ -52,13 +53,15 @@ public class RockPaperScissorsGame
                 else if (user_int == 1)
                 {
                     System.out.println("you chose paper" + AttackType.PAPER);
+                    wait(750);
                     System.out.println(intToAttackType(botMove()));
                     matchResult(user_int);
                     g = false;
                 }
                 else if (user_int == 2)
                 {
-                    System.out.println("you chose scissors" + AttackType.SCISSORS);
+                    System.out.println("you chose scissors " + AttackType.SCISSORS);
+                    wait(750);
                     System.out.println(intToAttackType(botMove()));
                     matchResult(user_int);
                     g = false;
@@ -90,26 +93,28 @@ public class RockPaperScissorsGame
         
     }
 
-    private String matchResult(int user_int)
+    private void matchResult(int user_int)
     {
+        String x = "";
         if (user_int == 0 & botMove() == 0)
-            String x = "tie";
-        if (user_int == 0 & botMove() == 1)
-            return "you lose"; 
-        if (user_int == 0 & botMove() == 1)
-            return "you win";
-        if (user_int == 1 & botMove() == 1)
-            return "tie";
-        if (user_int == 1 & botMove() == 0)
-            return "you win";
-        if (user_int == 1 & botMove() == 2)
-            return "you win";
-        if (user_int == 2 & botMove() == 2)
-            return "tie";
-        if (user_int == 2 & botMove() == 0)
-            return "you lose";
-        if (user_int == 2 & botMove() == 1)
-            return "you win";
+            x = "tie";
+        else if (user_int == 0 & botMove() == 1)
+            x =  "you lose"; 
+        else if (user_int == 0 & botMove() == 1)
+        x = "you win";
+        else if (user_int == 1 & botMove() == 1)
+        x = "tie";
+        else if (user_int == 1 & botMove() == 0)
+        x = "you win";
+        else if (user_int == 1 & botMove() == 2)
+        x = "you win";
+        else if (user_int == 2 & botMove() == 2)
+        x = "tie";
+        else if (user_int == 2 & botMove() == 0)
+        x = "you lose";
+        else if (user_int == 2 & botMove() == 1)
+        x = "you win";
+        System.out.println(x);
     }
 
     
