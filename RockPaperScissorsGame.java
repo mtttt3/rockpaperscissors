@@ -1,6 +1,5 @@
 import java.util.Random;     // need this for the random function
 import java.util.Scanner;    // need this for the user input function
-import java.util.concurrent.TimeUnit;
 
 enum AttackType
 {
