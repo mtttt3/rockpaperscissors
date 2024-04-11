@@ -22,7 +22,8 @@ public class Main{
        person person = new person("cooldude123", 14, false);
        System.out.println(person.chill);
 
- 
+
+
     }
 }
 
